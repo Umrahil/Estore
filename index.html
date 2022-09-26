@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+   
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  </head>
+  <body>
+    <!-- Header 1 Start  -->
+    <section id="HeaderOne">
+      <div class="HeaderOne-Left">
+        <div  class="LogoOne">
+          <img src="./Estore-img/usa-flag.webp" alt="USA flag" />
+        </div>
+        <div class="section">
+          <select name="select" id="select1">
+            <option value="USA">USA</option>
+            <option value="SPA">SPA</option>
+            <option value="CDA">CDA</option>
+          </select>
+        </div>
+        <div class="NumberOne">
+          <p>+777 2345 7886</p>
+        </div>
+      </div>
+      <div class="HeaderOne-Right">
+        <ul>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Wish List</a></li>
+          <li><a href="#">Shopping</a></li>
+          <li><a href="#">Card</a></li>
+          <li><a href="#">Checkout</a></li>
+        </ul>
+      </div>
+    </section>
+
+   <!-- Modal Start  -->
+    <div class="modal">
+        <h1 id="close">&times;</h1>
+        <h1 id="modalH1">Registration</h1>
+  <form action="#">
+      <label >
+          Name:
+          <br>
+          <input id="name_input" type="text" placeholder="Name">
+      </label>
+      <label >
+          Surname:
+          <br>
+          <input id="surname_input" type="text" placeholder="Surname">
+      </label>
+      <label >E-mail address 
+          <br>
+          <input id="e-mail_input" type="text" placeholder="E-mail address" >
+      </label>
+      <label >
+          Contact Number:
+          <div>
+              <select id="select_input">
+                  <option value="050">050</option>
+                  <option value="055">055</option>
+                  <option value="070">070</option>
+              </select>
+              <input type="number" id="number" placeholder="Number">
+          </div>
+      </label>
+      <label>
+          Password:
+          <br>
+          <input id="password_input" type="text" placeholder="Password" >
+      </label>
+    
+     <button id="submit">Sign In</button>
+  </form>
+</div>
+ <!-- Header 2 Start  -->
+  <section id="HeaderTwo">
+      <div class="HeaderTwo-Left">
+        <div class="Logo-Two">
+          <img src="./Estore-img/estore-logo.webp" alt="" />
+        </div>
+        <div class="HeaderTwo-Menu">
+          <ul>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="Categori" class="menu">Category</a></li>
+            <li><a href="Latest" class="menu">Latest</a></li>
+            <li><a href="Blog" class="menu">Blog</a></li>
+            <li class="open" class="menu"><a href="Pages">Pages <i class="fa-solid fa-angle-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="#">Login</a></li>
+              <li><a href="detalies.html">Card</a></li>
+              <li><a href="#">Element</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Shopping Card</a></li>
+            </ul>
+            
+            </li>
+            <li><a href="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="HeaderTwo-Right">
+        <ul>
+          <li class="wrapper">
+            <div class="search-input">
+                <a href="" target="_blank" hidden></a>
+                <input type="text" placeholder="Search...">
+                <div class="autocom-box">
+                  
+                </div>
+                <div class="icon"><i class="fas fa-search"></i></div>
+              </div>
+          </li>
+          <li class="HeaderTwo-Heart">
+            <i class="fa-regular fa-heart"></i>
+          </li>
+          
+          <li id="basket1"> 
+            <a href="#" id="basket2">
+              <button id="buttonsay"></button>
+              <i class="fa-solid fa-basket-shopping" ></i></a>
+            <ul id="basketDiv"></ul>
+          </li>
+          <li class="HeaderTwo-Button">
+            <button id="open1">
+                <div class="btn-effect-1"></div>
+                Sign In
+              </button>
+            
+          </li>
+        </ul>
+      </div>
+    
+    </div>
+    </section>
+
+    <!-- Hero Start  -->
+    <div class="hero">
+      <div class="hero-img">
+        <img src="./Estore-img/hero-girl.webp" alt="" />
+      </div>
+      <div class="hero-text">
+        <span>60% Discount</span>
+        <h1>Winter Collection</h1>
+        <p>Best Cloth Collection By 2022!</p>
+        <button>
+          <div class="btn-effect-1"></div>
+          Shop Now
+        </button>
+      </div>
+    </div>
+
+    <!-- Shop Category START  -->
+    <div class="Category">
+      <div class="container">
+        <div class="Ctgry-header">
+          <h1>Shop by Category</h1>
+        </div>
+        <div class="Ctgry-boxs owl-carousel">
+          <div class="Ctgry-box">
+            <img src="./Estore-img/ctgry1.webp" alt="" />
+            <div class="Ctgry-text">
+              <h2>Owmen`S</h2>
+              <button>Best New Deals</button>
+              <h3>New Collection</h3>
+            </div>
+          </div>
+          <div class="Ctgry-box">
+            <img src="./Estore-img/ctgry2.webp" alt="" />
+            <div class="Ctgry-text">
+              <h2>Owmen`S</h2>
+              <button>Best New Deals</button>
+              <h3>New Collection</h3>
+            </div>
+          </div>
+          <div class="Ctgry-box">
+            <img src="./Estore-img/ctgry3.webp" alt="" />
+            <div class="Ctgry-text">
+              <h2>Owmen`S</h2>
+              <button>Best New Deals</button>
+              <h3>New Collection</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Products START  -->
+<div class="container_products">
+  <div class="hero3head">
+      <h1>Latest Products</h1>
+  </div>
+  <ul id="categories">
+    <li class="active2" id="show_all">All</li>
+  </ul>
+  <div id="hero3"></div>
+ 
+</div>
+
+
+  <!-- OUR SHOP START -->
+  <div class="OurShop">
+      <div class="shop-img">
+          <img src="Estore-img/shop-boy.webp" alt="">
+        </div>
+          <div class="shop-text">
+              <h1>Find The Best Product
+                from Our Shop</h1>
+                <p>Designers who are interesten creating state of the.</p>
+              <button>Shop Now</button>
+          </div>
+          <div class="shop-shirt">
+              <img src="./Estore-img/shop-shirt.webp" alt="">
+          </div>
+      </div>
+  </div>
+  <!-- IMAGES START  -->
+<div class="images  owl-carousel">
+  <div class="img">
+    <img src="./Estore-img/img.webp" alt="">
+  </div>
+  <div class="img">
+    <img src="./Estore-img/img2.webp" alt="">
+  </div>
+  <div class="img">
+    <img src="./Estore-img/img3.webp" alt="">
+  </div>
+  <div class="img">
+    <img src="./Estore-img/img4.webp" alt="">
+  </div>
+  <div class="img">
+    <img src="./Estore-img/img5.webp" alt="">
+  </div>
+</div>
+
+<!-- EMAIL START  -->
+<div class="email_hero">
+  <div class="container">
+    <div class="email">
+      <div class="email-left">
+        <h1>Get Our <br>
+          Latest Offers News</h1>
+        <p>Subscribe news latter</p>
+      </div>
+      <div class="email-right">
+        <div class="emailInp">
+          <input type="text" placeholder="Your email here">
+        </div>
+        <div class="shopBtn">
+          <button>Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Shipping start  -->
+<div class="shipping">
+  <div class="shipping_rows">
+    <div class="shipping_flex">
+<div class="shipping_card">
+  <i class="fa-solid fa-box-open"></i>
+  <h1>Free Shipping Method</h1>
+  <h2>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</h2>
+</div>
+<div class="shipping_card">
+  <i class="fa-solid fa-unlock"></i>
+  <h1>Free Shipping Method</h1>
+  <h2>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</h2>
+</div>
+<div class="shipping_card">
+  <i class="fa-solid fa-arrows-rotate"></i>
+  <h1>Free Shipping Method</h1>
+  <h2>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</h2>
+</div>
+    </div>
+  </div>
+</div>
+  
+
+<!-- FOOTER START  -->
+<div class="footer">
+ 
+      <div class="footer-rows">
+          <div class="footer-box">
+              <img src="./Estore-img/estore-logo.webp" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.</p>
+          </div>
+          <div class="footer-box">
+              <h3>Quick Links</h3>
+              <p>About</p>
+              <p>Offers & Discounts</p>
+              <p>Get Coupon</p>
+              <p>Contact Us</p>
+          </div>
+          <div class="footer-box">
+              <h3>New Products</h3>
+              <p>Woman Cloth</p>
+              <p>Fashion Accessories</p>
+              <p>Man Accessories</p>
+              <p>Rubber made Toys</p>
+          </div>
+          <div class="footer-box">
+              <h3>Support</h3>
+              <p>Frequently Asked Questions</p>
+              <p>Terms & Conditions</p>
+              <p>Privacy Policy</p>
+              <p>Privacy Policy</p>
+              <p>Report a Payment Issue</p>
+          </div>
+      </div>
+ 
+  </div>
+
+ <a class="gotopbtn" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./detalies.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

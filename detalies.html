@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header 1 Start  -->
+    <section id="HeaderOne">
+      <div class="HeaderOne-Left">
+        <div class="LogoOne">
+          <img src="./Estore-img/usa-flag.webp" alt="USA flag" />
+        </div>
+        <div class="section">
+          <select name="select" id="select1">
+            <option value="USA">USA</option>
+            <option value="SPA">SPA</option>
+            <option value="CDA">CDA</option>
+          </select>
+        </div>
+        <div class="NumberOne">
+          <p>+777 2345 7886</p>
+        </div>
+      </div>
+      <div class="HeaderOne-Right">
+        <ul>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Wish List</a></li>
+          <li><a href="#">Shopping</a></li>
+          <li><a href="#">Card</a></li>
+          <li><a href="#">Checkout</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Modal Start  -->
+    <div class="modal">
+      <h1 id="close">&times;</h1>
+      <h1>Registration</h1>
+      <form action="#">
+        <label>
+          Name:
+          <br />
+          <input id="name_input" type="text" placeholder="Name" />
+        </label>
+        <label>
+          Surname:
+          <br />
+          <input id="surname_input" type="text" placeholder="Surname" />
+        </label>
+        <label
+          >E-mail address
+          <br />
+          <input id="e-mail_input" type="text" placeholder="E-mail address" />
+        </label>
+        <label>
+          Contact Number:
+          <div>
+            <select>
+              <option value="050">050</option>
+              <option value="055">055</option>
+              <option value="070">070</option>
+            </select>
+            <input type="number" id="number" placeholder="Number" />
+          </div>
+        </label>
+        <label>
+          Password:
+          <br />
+          <input id="password_input" type="text" placeholder="Password" />
+        </label>
+
+        <button id="submit">Sign In</button>
+      </form>
+    </div>
+    <!-- Header 2 Start  -->
+    <section id="HeaderTwo">
+      <div class="HeaderTwo-Left">
+        <div class="Logo-Two">
+          <img src="./Estore-img/estore-logo.webp" alt="" />
+        </div>
+        <div class="HeaderTwo-Menu">
+          <ul>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="Categori">Category</a></li>
+            <li><a href="Latest">Latest</a></li>
+            <li><a href="Blog">Blog</a></li>
+            <li class="open">
+              <a href="Pages">Pages <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="#">Login</a></li>
+                <li><a href="detalies.html">Card</a></li>
+                <li><a href="#">Element</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shopping Card</a></li>
+              </ul>
+            </li>
+            <li><a href="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="HeaderTwo-Right">
+        <ul>
+          <li class="wrapper">
+            <div class="search-input">
+              <a href="" target="_blank" hidden></a>
+              <input type="text" placeholder="Search..." />
+              <div class="autocom-box"></div>
+              <div class="icon"><i class="fas fa-search"></i></div>
+            </div>
+          </li>
+          <li class="HeaderTwo-Heart">
+            <i class="fa-regular fa-heart"></i>
+          </li>
+
+          <li id="basket1">
+            <a href="#" id="basket2">
+              <i class="fa-solid fa-basket-shopping"></i
+            ></a>
+
+            <ul id="basketDiv"></ul>
+          </li>
+          <li class="HeaderTwo-Button">
+            <button id="open1">
+              <div class="btn-effect-1"></div>
+              Sign In
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- DETALIES HERO START -->
+    <div class="detalies_hero">
+      <h1>Card List</h1>
+    </div>
+    <!-- DETALIES PRODUCTS START  -->
+    <div class="detalies_product">
+      <div class="productFlex">
+        <div class="product_left">
+          <p>Product</p>
+        </div>
+        <div class="product_right">
+          <p>Price</p>
+          <p>Quantity</p>
+          <p>Total</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="container1"></div>
+    <ul id="reciept"></ul>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./detalies.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
